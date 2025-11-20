@@ -9,12 +9,12 @@ import Project from "./components/section/Projects";
 import Contact from "./components/section/Contact";
 function App() {
   const [isloaded, setIsloaded] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
       {!isloaded && <LoadingScreen onComplete={() => setIsloaded(true)} />}
       <div
-        className={`min-h-screen transition-opacity duration-700 ${
+        className={`min-h-screen transition-opacity duration-700 bg-gradient-to-br from-blue-500 to-cyan-400 ${
           isloaded ? "opacity-100" : "opacity-0"
         } bg-black text-gray-100 `}
       >

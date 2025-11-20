@@ -1,34 +1,33 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import "tailwindcss";
-html, body{
+
+html{
   margin: 0;
     padding: 0;
-    background: #0a0a0a;
+   
     color: #f3f4f6;
+    
+    font-family: "Rubik", sans-serif;
 }
 
+ 
 
 
 @layer utilities {
   /* چشمک‌زن برای متن */
   @keyframes blink {
-    0%, 100% {
+    0%, 100%{
       opacity: 1;
     }
-    50% {
-      opacity: 0;
-    }
+    50% { opacity: 0; }
   }
-
   .animate-blink {
     animation: blink 0.8s step-end infinite;
   }
+  
 
   /* انیمیشن بار لودینگ */
   @keyframes loading {
