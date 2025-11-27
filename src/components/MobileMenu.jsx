@@ -2,7 +2,7 @@ export default function MobileMenu({ menuOpen, setMenuOpen }) {
     console.log("munOpen:", menuOpen);
     return (
       <div
-        className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.4)] z-50 flex  flex-col items-center justify-center
+        className={`fixed top-0 left-0 w-full bg-black z-50 flex  flex-col items-center justify-center
          transition-all duration-300 ease-in-out
         ${
             menuOpen

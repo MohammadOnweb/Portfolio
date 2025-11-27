@@ -7,16 +7,21 @@ import Home from "./components/section/Home";
 import About from "./components/section/About";
 import Project from "./components/section/Projects";
 import Contact from "./components/section/Contact";
+import { useEffect } from "react";
 function App() {
-  const [isloaded, setIsloaded] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
+  useEffect(() =>{
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 4000);
+    return () => clearTimeout(timer)
+  }, [])
   return (
     <>
-      {!isloaded && <LoadingScreen onComplete={() => setIsloaded(true)} />}
+      {loading ? <LoadingScreen />: 
       <div
-        className={`min-h-screen transition-opacity duration-700 bg-gradient-to-br from-blue-500 to-cyan-400 ${
-          isloaded ? "opacity-100" : "opacity-0"
-        } bg-black text-gray-100 `}
+        className="min-h-screen transition-opacity duration-700 bg-black "
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -24,7 +29,7 @@ function App() {
         <About />
         <Project />
         <Contact />
-      </div>
+      </div>}
     </>
   );
 }

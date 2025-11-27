@@ -2,9 +2,10 @@ import ReviewOnScroll from "../ReviewOnScroll";
 
 export default function About() {
   const frontendSkills = [
+    "Html,5",
+    "Css,3",
+    "JavaScript",
     "React",
-    "Vue",
-    "TypeScript",
     "TailwindCSS",
     "Bootstrap",
   ];
@@ -22,10 +23,12 @@ export default function About() {
           </h2>
 
           {/* Glass Card */}
-          <div className="backdrop-blur-md rounded-xl p-8 border hover:-translate-y-1 cursor-pointer transition-transform duration-300 ease-out">
+          <div className="backdrop-blur-md rounded-xl p-8 border border-green-600 hover:-translate-y-1 cursor-pointer transition-transform duration-300 ease-out">
             <p className="text-gray-300 mb-6">
-              Passionate developer with a strong interest in modern web
-              technologies and creating smooth user experiences.
+              
+I’m a passionate junior web developer with a strong interest in building clean, responsive, and user-friendly websites. I enjoy solving problems through code and continuously learning new technologies.  
+I have experience working with HTML, CSS, JavaScript, and frameworks like React. I love collaborating in teams, sharing ideas, and growing with every project. My goal is to contribute to meaningful projects and become a full-stack developer. 
+
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -63,36 +66,34 @@ export default function About() {
 
           {/* Education & Experience */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform duration-300 ease-out">
+            <div className="p-6 rounded-xl border border-green-600 hover:-translate-y-1 transition-transform duration-300 ease-out">
               <h3 className="text-xl font-bold mb-4">Education</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong>B.S. in Computer Science</strong> – XYZ University
-                  (2020–2025)
+                  <strong>Completed online courses and self-study in web development</strong> – 
+                  (2023-2025)
                 </li>
                 <li>
-                  Relevant Courses: Data Structures, Web Development, Cloud
-                  Computing
+                  Gained practical experience through personal projects and tutorials
                 </li>
               </ul>
             </div>
 
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-transform duration-300 ease-out">
+            <div className="p-6 rounded-xl border border-green-600 hover:-translate-y-1 transition-transform duration-300 ease-out">
               <h3 className="text-xl font-bold mb-4">Work Experience</h3>
               <div className="space-y-4 text-gray-300">
                 <div>
                   <h3 className="font-semibold">
-                    Software Engineer at ABC (2022–2023)
+                    Worked on several small projects
                   </h3>
-                  <p>Developed and maintained modern web applications.</p>
+                  <p>Comfortable using HTML,css,JavaScript,and Git/GitHub.</p>
                 </div>
                 <div>
                   <h3 className="font-semibold">
-                    Frontend Intern at DEF Startup (2023)
+                    Frontend Intern at Bitlinks (2025)
                   </h3>
                   <p>
-                    Assisted in building reusable components and integrating
-                    APIs.
+                    Assisted in developing responsive websites using HTML, CSS and JavaScript. Collaborated with designer and senior developer to deliver projects.
                   </p>
                 </div>
               </div>

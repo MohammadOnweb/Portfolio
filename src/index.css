@@ -7,42 +7,27 @@
 html{
   margin: 0;
     padding: 0;
-   
     color: #f3f4f6;
-    
     font-family: "Rubik", sans-serif;
 }
 
- 
 
 
-@layer utilities {
-  /* چشمک‌زن برای متن */
-  @keyframes blink {
-    0%, 100%{
-      opacity: 1;
+
+@keyframes spinSlow {
+  
+    0%{
+      transform: 'rotate(0deg)'
     }
-    50% { opacity: 0; }
-  }
-  .animate-blink {
-    animation: blink 0.8s step-end infinite;
+    100%{
+      transform: 'rotate(360deg)'
+    }
+  
+  } 
+  .spinner{
+    animation: spinSlow 1s linear infinite;
   }
   
-
-  /* انیمیشن بار لودینگ */
-  @keyframes loading {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(250%);
-    }
-  }
-
-  .animate-loading-bar {
-    animation: loading 0.8s ease infinite;
-  }
-
   /* افکت محو و ظاهر شدن عناصر هنگام اسکرول */
   .reveal {
     opacity: 0;
@@ -54,5 +39,5 @@ html{
     opacity: 1;
     transform: translateY(0);
   }
-}
+
  

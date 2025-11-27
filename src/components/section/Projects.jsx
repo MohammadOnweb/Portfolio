@@ -5,31 +5,31 @@ export default function Projects() {
   const [text, setText] = useState("");
   const projects = [
     {
-      title: "Cloud Platform",
+      title: "Personal Portfolio Website",
       description:
-        "Scalable cloud infrastructure built with React, Node.js, AWS, and Docker to handle modern web apps efficiently.",
-      tech: ["React", "Node.js", "AWS", "Docker"],
+        "A responsive website built with React and Tailwind CSS to showcase my skills, projects,and contact information.",
+      tech: ["React", "Tailwind CSS", "GitHub Pages"],
       link: "#",
     },
     {
-      title: "E-Commerce Dashboard",
+      title: "To-Do List App",
       description:
-        "A responsive admin dashboard for managing products and orders with real-time analytics.",
-      tech: ["Next.js", "TailwindCSS", "MongoDB"],
+        " A simple app to add, delete, and mark tasks as complete, Focused on clean UI and basic React state management.",
+      tech: ["React", "TailwindCSS",],
       link: "#",
     },
     {
-      title: "Portfolio Website",
+      title: "Weather App",
       description:
-        "A modern portfolio showcasing projects, animations, and smooth scroll transitions.",
-      tech: ["React", "Framer Motion", "Vite"],
+        " Fetches real-time weather data using an extenal API. Allows users to search by city name",
+      tech: ["HTML", "Css", "JavaScript"],
       link: "#",
     },
     {
-      title: "Chat App",
+      title: "Blog Page Design",
       description:
-        "A real-time chat application with authentication and socket-based messaging.",
-      tech: ["React", "Node.js", "Socket.io"],
+        "Design a static blog hompage layout as a practice project for responsive design.",
+      tech: ["HTML", "CSS", "Flexbox", "Grid"],
       link: "#",
     },
   ];
@@ -50,7 +50,7 @@ export default function Projects() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:bg-white/5 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] cursor-pointer transition-all"
+                className="p-6 rounded-xl border border-green-600 hover:-translate-y-1 hover:bg-green-800 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] cursor-pointer transition-all"
               >
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-gray-400 mb-4">{project.description}</p>

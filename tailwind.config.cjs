@@ -3,18 +3,21 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        Rubik: ["Rubik", "sans-serif"],
-        Roboto: ["Roboto", "sans-serif"],
+      animation :{
+        'loading-bar': 'loading .5s  linear infinite',
       },
-      colors: {
-        brand: {
-          DEFAULT: "#16a34a",
-          light: "#166534",
-          dark: "#166534",
+      keyframes: {
+        loading :{
+          '0%':{
+            transform: 'translateX(0%)'
+          },
+          '100%':{
+            transform: 'translateX(100%)'
+          },
         },
       },
-    },
+
+     },
   },
   plugins: [],
 };

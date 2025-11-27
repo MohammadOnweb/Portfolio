@@ -1,5 +1,24 @@
+import { useState } from "react";
 import ReviewOnScroll from "../ReviewOnScroll";
 export default function Home() {
+  // function DownloadCV(){
+  //   const[loading, setLoading]  = useState(false)
+  //   const handleDownloa = (e) =>{
+
+  //     e.preventDefault();
+  //     setLoading(true);
+  //     setTimeout(() => {
+  //       setLoading(false);
+  //       const link = document.createElement('a');
+  //       link.href = 'images/CV.pdf';
+  //       link.download = 'my-cv.pdf';
+  //       document.body.appendChild(link);
+  //       link.click();
+  //       document.body.re
+        
+  //     }, 2000);
+  //   }
+  // }
   return (
     <section
       id="home"
@@ -7,28 +26,19 @@ export default function Home() {
     >
       <ReviewOnScroll>
         <div className="text-center z-10 px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Hi, I'm Mohammad
           </h1>
-          <p className="text-gray-400  text-lg mb-8 max-w-lg max-auto ">
-            I'm a full-Stack developer who loves crafting clean, scalable web
-            application. My goal is to build solutions that offer both
-            excetional performance and a delight user experience.
+          <p className="text-gray-200  text-lg mb-8 max-w-lg max-auto ">
+          I'm a junior web developer passionate about building responsive websites with React, Tailwind, and modern tools. I enjoy solving problems and love working in collaborative team environments to bring ideas to life.
+
           </p>
+
           <div className="flex justify-center space-x-4">
-            <a
-              href="#projects "
-              className="bg-green-600 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-2 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
-            >
-              View Project
-            </a>
-            <a
-              href="#contact "
-              className="border border-green-600 text-white py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130,246,0.2)] hover:bg-green-700"
-            >
-              Contact Me
-            </a>
-          </div>
+      <a href="images/CV.pdf" download className="bg-green-600 hover:bg-green-700 px-6 py-3 rounded text-white font-medium transition">Download CV</a>
+      <a href="#projects" className="border border-green-600 px-6 py-3 rounded text-white font-medium hover:bg-green-600 transition">View Projects</a>
+    </div>
+
         </div>
       </ReviewOnScroll>
     </section>
