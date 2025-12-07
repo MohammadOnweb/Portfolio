@@ -47,6 +47,26 @@ export default function MobileMenu({ menuOpen, setMenuOpen }) {
         >
           Projects
         </a>
+        <a
+          href="#tutorials"
+          onClick={() => setMenuOpen(false)}
+          className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+              ${
+                menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+              }`}
+        >
+          Tutorials
+        </a>
+        <a
+          href="#youtube"
+          onClick={() => setMenuOpen(false)}
+          className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+              ${
+                menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+              }`}
+        >
+          Youtube
+        </a>
  
         <a
           href="#contact"

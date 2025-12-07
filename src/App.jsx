@@ -6,6 +6,8 @@ import { useState } from "react";
 import Home from "./components/section/Home";
 import About from "./components/section/About";
 import Project from "./components/section/Projects";
+import Tutorials from "./components/section/Tutorials";
+import Yuotube from "./components/section/Youtube";
 import Contact from "./components/section/Contact";
 import { useEffect } from "react";
 function App() {
@@ -28,6 +30,8 @@ function App() {
         <Home />
         <About />
         <Project />
+        <Tutorials/>
+        <Yuotube/>
         <Contact />
       </div>}
     </>

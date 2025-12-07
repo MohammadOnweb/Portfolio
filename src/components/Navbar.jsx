@@ -26,6 +26,8 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
             <a href="#home" className="text-gray-300 hover:text-white transition-colors">Home</a>
             <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
             <a href="#projects" className="text-gray-300 hover:text-white transition-colors">Projects</a>
+            <a href="#tutorials" className="text-gray-300 hover:text-white transition-colors">Tutorials</a>
+            <a href="#youtube" className="text-gray-300 hover:text-white transition-colors">YouTube</a>
             <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a>
           </div>
         </div>
