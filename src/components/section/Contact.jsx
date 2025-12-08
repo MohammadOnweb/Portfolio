@@ -53,7 +53,7 @@ export default function Contact() {
               onChange={(e) =>
                 setFormData({ ...formData, name: e.target.value })
               }
-              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white focus:outline-none focus:border-green-600 focus:bg-blue-500/5"
+              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-black focus:outline-none focus:border-green-600 focus:bg-blue-500/5"
             />
 
             <input
@@ -66,7 +66,7 @@ export default function Contact() {
               onChange={(e) =>
                 setFormData({ ...formData, email: e.target.value })
               }
-              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white focus:outline-none focus:border-green-600 focus:bg-blue-500/5"
+              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-black focus:outline-none focus:border-green-600 focus:bg-blue-500/5"
             />
 
             <textarea
@@ -79,13 +79,13 @@ export default function Contact() {
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
               }
-              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white focus:outline-none focus:border-green-600 focus:bg-blue-500/5"
+              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-black focus:outline-none focus:border-green-600 focus:bg-blue-500/5"
             />
 
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-blue-500 text-black py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? "Sending..." : "Send Message"}
             </button>
