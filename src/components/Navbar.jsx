@@ -1,4 +1,4 @@
-import profilImage from '/public/images/mmm.JPG'
+import profilImage from '/images/mmm.JPG'
 import { useEffect } from "react";
 export default function Navbar({ menuOpen, setMenuOpen }) {
   useEffect(() => {

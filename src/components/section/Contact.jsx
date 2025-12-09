@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { useState } from "react";
 import ReviewOnScroll from "../ReviewOnScroll";
 import emailjs from "@emailjs/browser";
@@ -9,8 +10,10 @@ export default function Contact() {
     message: "",
   });
   const [loading, setLoading] = useState(false);
+  const formRef = useRef(null);
 
-  const SERVICE_ID = "service_oc9m9aa";
+
+  const SERVICE_ID = "service_odwjjsk";
   const TEMPLATE_ID = "template_f6gqhjg";
   const PUBLIC_KEY = "PYpCNS47wkoO8nEF1";
 
@@ -19,7 +22,8 @@ export default function Contact() {
     setLoading(true);
 
     emailjs
-      .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
+
       .then(() => {
         alert("✅ Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
@@ -42,7 +46,7 @@ export default function Contact() {
             Get in touch
           </h2>
 
-          <form className="space-y-6" onSubmit={handleSubmit}>
+          <form ref={formRef} className="space-y-6" onSubmit={handleSubmit}>
             <input
               type="text"
               id="name"
